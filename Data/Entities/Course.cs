@@ -9,4 +9,5 @@ public class Course
     public string? Topic { get; set; }
     [DataType(DataType.Date)]
     public DateTime ReleaseDate { get; set; }
+    public string? Author { get; set; }
 }

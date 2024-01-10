@@ -7,23 +7,28 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CourseManagement.Data;
 using CourseManagement.Data.Entities;
+using AutoMapper;
+using CourseManagement.ViewModels;
 
 namespace CourseManagement.Controllers
 {
     public class CoursesController : Controller
     {
         private readonly CourseDbContext _context;
-
-        public CoursesController(CourseDbContext context)
+        private readonly IMapper _mapper;
+        public CoursesController(CourseDbContext context,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper ;
         }
 
         // GET: Courses
         public async Task<IActionResult> Index()
         {
-              return _context.Courses != null ? 
-                          View(await _context.Courses.ToListAsync()) :
+            var products = await _context.Courses.ToListAsync();
+            var result = _mapper.Map<IEnumerable<CourseViewModel>>(products);
+              return result != null ? 
+                          View(result) :
                           Problem("Entity set 'CourseDbContext.Courses'  is null.");
         }
 
@@ -42,7 +47,7 @@ namespace CourseManagement.Controllers
                 return NotFound();
             }
 
-            return View(course);
+            return View(_mapper.Map<CourseViewModel>(course));
         }
 
         // GET: Courses/Create
@@ -56,15 +61,16 @@ namespace CourseManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Topic,ReleaseDate")] Course course)
+        public async Task<IActionResult> Create(CourseRequest request)
         {
             if (ModelState.IsValid)
             {
+                var course = _mapper.Map<Course>(request);
                 _context.Add(course);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(course);
+            return View(request);
         }
 
         // GET: Courses/Edit/5
@@ -80,7 +86,7 @@ namespace CourseManagement.Controllers
             {
                 return NotFound();
             }
-            return View(course);
+            return View(_mapper.Map<CourseViewModel>(course));
         }
 
         // POST: Courses/Edit/5
@@ -88,7 +94,7 @@ namespace CourseManagement.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Topic,ReleaseDate")] Course course)
+        public async Task<IActionResult> Edit(int id, CourseViewModel course)
         {
             if (id != course.Id)
             {
@@ -99,7 +105,7 @@ namespace CourseManagement.Controllers
             {
                 try
                 {
-                    _context.Update(course);
+                    _context.Update(_mapper.Map<Course>(course));
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -133,7 +139,7 @@ namespace CourseManagement.Controllers
                 return NotFound();
             }
 
-            return View(course);
+            return View(_mapper.Map<CourseViewModel>(course));
         }
 
         // POST: Courses/Delete/5

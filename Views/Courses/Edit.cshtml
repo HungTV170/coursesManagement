@@ -1,4 +1,4 @@
-@model CourseManagement.Data.Entities.Course
+@model CourseManagement.ViewModels.CourseViewModel
 
 @{
     ViewData["Title"] = "Edit";
@@ -27,6 +27,11 @@
                 <label asp-for="ReleaseDate" class="control-label"></label>
                 <input asp-for="ReleaseDate" class="form-control" />
                 <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+             <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

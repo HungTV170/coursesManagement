@@ -6,10 +6,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+//automapper config
+builder.Services.AddAutoMapper(typeof(Program));
+
+
 builder.Services.AddDbContext<CourseDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CourseDbContext") ?? throw new InvalidOperationException("Connection string 'CourseDbContext' not found.")));
 var app = builder.Build();
 
+
+using(var scope = app.Services.CreateScope()){
+    var service = scope.ServiceProvider;
+    DbInitializer.Seed((IServiceProvider)scope);
+}
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
