@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1sOwHa7XWE5GHPyHleE7pkuF8Odn33fTNgok0ioSNrg=",
+  "Hash": "CtTnbTxkZQrA4ihXwIyWPlfwBwACOHok+UvnsMhLFKw=",
   "Source": "CourseManagement",
   "BasePath": "_content/CourseManagement",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\example\\.NET\\coursesManagement\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CourseManagement.styles.css",
+      "Identity": "D:\\example\\.NET\\coursesManagement\\obj\\Release\\net7.0\\scopedcss\\bundle\\CourseManagement.styles.css",
       "SourceId": "CourseManagement",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\example\\.NET\\coursesManagement\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\example\\.NET\\coursesManagement\\obj\\Release\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/CourseManagement",
       "RelativePath": "CourseManagement.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\example\\.NET\\coursesManagement\\obj\\Debug\\net7.0\\scopedcss\\bundle\\CourseManagement.styles.css"
+      "OriginalItemSpec": "D:\\example\\.NET\\coursesManagement\\obj\\Release\\net7.0\\scopedcss\\bundle\\CourseManagement.styles.css"
     },
     {
-      "Identity": "D:\\example\\.NET\\coursesManagement\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CourseManagement.bundle.scp.css",
+      "Identity": "D:\\example\\.NET\\coursesManagement\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\CourseManagement.bundle.scp.css",
       "SourceId": "CourseManagement",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\example\\.NET\\coursesManagement\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\example\\.NET\\coursesManagement\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/CourseManagement",
       "RelativePath": "CourseManagement.bundle.scp.css",
       "AssetKind": "All",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\example\\.NET\\coursesManagement\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\CourseManagement.bundle.scp.css"
+      "OriginalItemSpec": "D:\\example\\.NET\\coursesManagement\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\CourseManagement.bundle.scp.css"
     },
     {
       "Identity": "D:\\example\\.NET\\coursesManagement\\wwwroot\\css\\site.css",

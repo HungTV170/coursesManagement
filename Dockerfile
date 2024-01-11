@@ -11,13 +11,13 @@ RUN dotnet restore
 # Thực hiện quá trình xây dựng
 RUN dotnet build -c Release
 
-RUN dotnet publish
+RUN dotnet publish -c Release
 # Giai đoạn 2: Xuất bản ứng dụng
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS publish
 WORKDIR /app
 
 # Sao chép tất cả từ giai đoạn xây dựng (build stage) vào thư mục làm việc
-COPY --from=build /app/bin/Debug/net7.0/publish .
+COPY --from=build /app/bin/Release/net7.0/publish .
 
 # Sau các dòng COPY để xây dựng ứng dụng, thêm dòng sau để sao chép thư mục wwwroot
 COPY wwwroot /app/wwwroot

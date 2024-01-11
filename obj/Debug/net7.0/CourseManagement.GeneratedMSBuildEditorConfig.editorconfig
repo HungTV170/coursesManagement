@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CourseManagement
 build_property.RootNamespace = CourseManagement
-build_property.ProjectDir = d:\example\.NET\CourseManagement\
+build_property.ProjectDir = D:\example\.NET\coursesManagement\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\example\.NET\CourseManagement
+build_property.MSBuildProjectDirectory = D:\example\.NET\coursesManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/example/.NET/CourseManagement/Views/Courses/Create.cshtml]
+[D:/example/.NET/coursesManagement/Views/Courses/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Courses/Delete.cshtml]
+[D:/example/.NET/coursesManagement/Views/Courses/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Courses/Details.cshtml]
+[D:/example/.NET/coursesManagement/Views/Courses/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Courses/Edit.cshtml]
+[D:/example/.NET/coursesManagement/Views/Courses/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Courses/Index.cshtml]
+[D:/example/.NET/coursesManagement/Views/Courses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Home/Index.cshtml]
+[D:/example/.NET/coursesManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Home/Privacy.cshtml]
+[D:/example/.NET/coursesManagement/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Shared/Error.cshtml]
+[D:/example/.NET/coursesManagement/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/example/.NET/coursesManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/_ViewImports.cshtml]
+[D:/example/.NET/coursesManagement/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/_ViewStart.cshtml]
+[D:/example/.NET/coursesManagement/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/example/.NET/CourseManagement/Views/Shared/_Layout.cshtml]
+[D:/example/.NET/coursesManagement/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6q92l2lvqu

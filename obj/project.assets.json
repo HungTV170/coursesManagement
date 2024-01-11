@@ -10506,11 +10506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\example\\.NET\\CourseManagement\\CourseManagement.csproj",
+      "projectUniqueName": "D:\\example\\.NET\\coursesManagement\\CourseManagement.csproj",
       "projectName": "CourseManagement",
-      "projectPath": "d:\\example\\.NET\\CourseManagement\\CourseManagement.csproj",
+      "projectPath": "D:\\example\\.NET\\coursesManagement\\CourseManagement.csproj",
       "packagesPath": "C:\\Users\\84706\\.nuget\\packages\\",
-      "outputPath": "d:\\example\\.NET\\CourseManagement\\obj\\",
+      "outputPath": "D:\\example\\.NET\\coursesManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\84706\\AppData\\Roaming\\NuGet\\NuGet.Config",

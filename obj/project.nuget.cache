@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "04nkbeSOPPC+dKovZL4popveK6ii1Dt+OdY1Dq14JGuvHqm1IJeZ9PBrY1gL5i4eYZ4EgXiaVZ1glLRP5hgJ2A==",
+  "dgSpecHash": "Rkr0kYwMKOJxcEd5ol+TMAtS6+LTSdlCVfb4lzOPbWW1nZDUI8wuGcPqH19cqgfT3avH5QS2t0fOfgJLX0l5hQ==",
   "success": true,
-  "projectFilePath": "D:\\example\\.NET\\CourseManagement\\CourseManagement.csproj",
+  "projectFilePath": "D:\\example\\.NET\\coursesManagement\\CourseManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\84706\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\84706\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

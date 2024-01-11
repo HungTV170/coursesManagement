@@ -10,6 +10,14 @@ builder.Services.AddDbContext<CourseDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CourseDbContext") ?? throw new InvalidOperationException("Connection string 'CourseDbContext' not found.")));
 var app = builder.Build();
 
+
+using (var scope = app.Services.CreateScope())
+    {
+        var db = scope.ServiceProvider.GetRequiredService<CourseDbContext>();
+        db.Database.Migrate();
+    }
+
+    
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
