@@ -7,5 +7,6 @@ namespace CourseManagement.Service{
         Task<int> Create(CourseRequest courseViewModel);
         Task<IEnumerable<CourseViewModel>> GetAll();
         Task<CourseViewModel> GetById(int id);
+        Task<PaganitedList<CourseViewModel>> GetAllFilter(string sortOrder, string currentFilter, string searchString,int pageIndex,int pageSize);
     }
 }

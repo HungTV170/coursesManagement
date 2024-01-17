@@ -3,6 +3,8 @@ using CourseManagement.ViewModels;
 using CourseManagement.Data;
 using CourseManagement.Data.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
+using System.Collections;
 namespace CourseManagement.Service{
     class CoursesService : ICoursesService
     {
@@ -12,6 +14,37 @@ namespace CourseManagement.Service{
             this.context = context;
             this.mapper = mapper;
         }
+
+        public async Task<PaganitedList<CourseViewModel>> GetAllFilter(string sortOrder, string currentFilter, string searchString,int pageIndex,int pageSize)
+        {
+           if(searchString != null){
+            pageIndex =1;
+           }else{
+            searchString = currentFilter;
+           }
+
+            var courses = context.Courses.Select(c=>c);
+
+            if(!String.IsNullOrEmpty(searchString)){
+                courses = context.Courses.Where(c=>
+                c.Author!.Contains(searchString)||
+                c.Title!.Contains(searchString) ||
+                c.Topic!.Contains(searchString)
+            );
+            }
+            courses = sortOrder switch
+    {
+        "title_desc" => courses.OrderByDescending(s => s.Title),
+        "topic" => courses.OrderBy(s => s.Topic),
+        "topic_desc" => courses.OrderByDescending(s => s.Topic),
+        "release_date" => courses.OrderBy(s => s.ReleaseDate),
+        "release_date_desc" => courses.OrderByDescending(s => s.ReleaseDate),
+        _ => courses.OrderBy(s => s.Title),
+    };
+                return PaganitedList<CourseViewModel>.Create(mapper.Map<IEnumerable<CourseViewModel>>(await courses.ToListAsync()),pageIndex,pageSize);
+        }
+
+        
 
         async Task<int> ICoursesService.Create(CourseRequest request)
         {

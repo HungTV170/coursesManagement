@@ -22,8 +22,8 @@ services:
       - sql-server
     networks:
       - app-network
-    environment:
-      ASPNETCORE_ENVIRONMENT: "Development"  # Đặt môi trường phát triển
+    #environment:
+    #  ASPNETCORE_ENVIRONMENT: "Development"  # Đặt môi trường phát triển
 
 networks:
   app-network:
